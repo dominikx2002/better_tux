@@ -11,6 +11,18 @@ This repository provides a Bash script fragment [better_tux.txt](better_tux.txt)
 ## Configuration Guide
 
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
+**Ubuntu / Debian**
+```bash
+sudo apt install neofetch
+```
+**macOS (Homebrew)
+```bash
+brew install neofetch
+```
+**Arch Linux / Manjaro**
+```bash
+sudo pacman -S neofetch
+```
 
 **1. Copy script fragment:**
 ```bash
