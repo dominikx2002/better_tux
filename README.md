@@ -1,13 +1,16 @@
 # better_tux  
-**Better Tux ASCII art for Neofetch (Bash)**
+**Better Tux ASCII art for neofetch**
 
+## Preview
 <img width="1920" height="1080" alt="better_tux_screenshot" src="https://github.com/user-attachments/assets/2506d13e-311b-4afa-a996-060021a0be4e" />
+
+---
 
 This repository provides a Bash script fragment (`better_tux.txt`) to display an improved Tux logo-image in **neofetch**.
 
 ---
 
-## Installation Guide
+## Configuration Guide
 
 1. **Download `better_tux.txt`**  
    You can:
