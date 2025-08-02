@@ -5,11 +5,8 @@
 <img width="1920" height="1080" alt="better_tux_screenshot" src="https://github.com/user-attachments/assets/2506d13e-311b-4afa-a996-060021a0be4e" />
 
 ---
-
-
 This repository provides a Bash script fragment [btter_tux.txt](better_tux.txt) to display an improved Tux logo-image in **neofetch**.
 ---
-
 
 ## Configuration Guide
 
