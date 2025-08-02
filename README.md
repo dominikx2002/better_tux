@@ -6,18 +6,17 @@
 
 ---
 
-This repository provides a Bash script fragment (`better_tux.txt`) to display an improved Tux logo-image in **neofetch**.
 
+This repository provides a Bash script fragment [btter_tux.txt](better_tux.txt) to display an improved Tux logo-image in **neofetch**.
 ---
+
 
 ## Configuration Guide
 
-1. [Download better_tux.txt](better_tux.txt)  
-   You can:
-   - download the file from this repository  
-   **or**
-   - copy the code manually from here:
+After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
+**1. Copy script fragment:**
+```bash
         "better_tux")
             set_colors 220 8 250 11 7 235 
             read -rd '' ascii_data <<'EOF'
@@ -52,45 +51,61 @@ ${c4}         ;${c1}00000000${c4}'             .${c1}00000000
                                    00${c4},
 EOF
     ;;
+```
+or from text file [better_tux.txt](better_tux.txt) located in this repository.
 
-2. **Open the neofetch script**  
-   Open `/usr/bin/neofetch` in a text editor with root privileges, for example:
+**2. Config neofetch script**
+- Make changes using sed tool with this single command:
+   ```bash
+   sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
+   ```
+
+or
+
+- Manualy open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
    ```bash
    sudo nano /usr/bin/neofetch
    ```
 
-   **Paste the code fragment**  
-   Find the function called `get_distro_ascii()`.  
-   Within this function, between other `case` entries, paste the copied code:
+  Find the function called *get_distro_ascii()*:
+   Find: Ctrl + W
+   Type: `get_distro_ascii()`
+  
+  Within this function, between other `case` entries, paste the copied code
+  Make sure to place it among the other distro cases.
+  
+  Save your changes and close the text editor:
+   Save: Ctrl + O, Enter
+   Exit: Ctrl + X
+
+
+**3. Edit neofetch configuration**  
+- Edit config file with single command:
    ```bash
-        "better_tux")
-            set_colors 220 8 250 11 7 235 
-            read -rd '' ascii_data <<'EOF'
-            ... [paste the full code from better_tux.txt here] ...
-            EOF
-        ;;
+   sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
    ```
-   Make sure to place it among the other distro cases.
+   
+   **Run neofetch**  
+   ```bash
+   neofetch
+   ```
 
-   **Save and close the file**  
-   Save your changes and close the text editor.
+or
 
-3. **Edit neofetch configuration**  
-   Open your neofetch config file:
+- Manualy open your neofetch config file:
    ```bash
    nano ~/.config/neofetch/config.conf
    ```
-   Find the line:
-   ```
-   ascii_distro="auto"
-   ```
-   and replace it with:
-   ```
-   ascii_distro="better_tux"
-   ```
-
-   **Save changes**  
-   Save the config file and exit the editor.
+   
+   Find the line `ascii_distro="auto"`:
+   Find: Ctrl + W
+   Type: ascii_distro="auto"
+   
+   and replace it with `ascii_distro="better_tux"`
+  
+   Save the config file and exit the editor:
+   Save: Ctrl + O, Enter
+   Exit: Ctrl + X
 
    **Run neofetch**  
    ```bash
@@ -100,7 +115,3 @@ EOF
 ---
 
 Created by [Dominik Serafin/dominikx2002]
-5. **Run neofetch**
-   ```bash
-   neofetch
-   ```
