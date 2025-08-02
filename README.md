@@ -12,7 +12,7 @@ This repository provides a Bash script fragment (`better_tux.txt`) to display an
 
 ## Configuration Guide
 
-1. **Download `better_tux.txt`**  
+1. **Download (better_tux.txt)**  
    You can:
    - download the file from this repository  
    **or**
