@@ -1,4 +1,5 @@
-### About  
+About
+=====
 This repository provides a Bash script fragment [better_tux.txt](better_tux.txt) to display an improved Tux logo-image in **neofetch**.
 
 ### Preview
