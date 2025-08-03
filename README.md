@@ -12,7 +12,7 @@ Configuration Guide
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
 ## From Terminal
-**1. Download txt file [better_tux.txt](better_tux.txt) from github repository using git:**
+1. **Download txt file [better_tux.txt](better_tux.txt) from github repository using git:**
    ```
    git clone https://github.com/dominikx2002/better_tux.git
    ```
@@ -20,13 +20,13 @@ After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
    cd better_tux
    ```
 
-**2. Config neofetch script**
+2. **Config neofetch script**
 Make changes using sed tool with this single command:
    ```
    sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
    ```
 
-**3. Edit neofetch configuration**  
+3. **Edit neofetch configuration**  
 Edit config file with single command:
    ```
    sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
@@ -77,8 +77,9 @@ EOF
 ```
 or from text file [better_tux.txt](better_tux.txt) located in this repository.
 
-**2. Config neofetch script**
-*Open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
+2. **Config neofetch script**
+---
+Open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
    ```
    sudo nano /usr/bin/neofetch
    ```
@@ -91,7 +92,7 @@ Save your changes and close the text editor:
    Save: Ctrl + O, Enter
    Exit: Ctrl + X
 
-**3. Edit neofetch configuration**  
+3. **Edit neofetch configuration**  
 Open your neofetch config file:
    ```
    nano ~/.config/neofetch/config.conf
