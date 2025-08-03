@@ -78,7 +78,7 @@ EOF
 or from text file [better_tux.txt](better_tux.txt) located in this repository.
 
 **2. Config neofetch script**
-Open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
+*Open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
    ```
    sudo nano /usr/bin/neofetch
    ```
