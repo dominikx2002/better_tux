@@ -97,7 +97,7 @@ neofetch
    Within this function, between other `case` entries, paste the copied code.
    Make sure to place it among the other distro cases.
 
-      - Go with cursor to end of the case `;;`
+      - Go with cursor to the end of the case `;;`
       - Paste: Ctrl + Shift + V
 
    Save your changes and close the text editor:
