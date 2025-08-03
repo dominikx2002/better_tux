@@ -2,24 +2,14 @@ About
 =====
 This repository provides a Bash script fragment [better_tux.txt](better_tux.txt) to display an improved Tux logo-image in **neofetch**.
 
-### Preview
+Preview
+=====
 <img width="1920" height="1080" alt="better_tux_screenshot" src="https://github.com/user-attachments/assets/2506d13e-311b-4afa-a996-060021a0be4e" />
 
-### Configuration Guide
+Configuration Guide
+=====
 
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
-**Ubuntu / Debian**
-```bash
-sudo apt install neofetch
-```
-**macOS (Homebrew)
-```bash
-brew install neofetch
-```
-**Arch Linux / Manjaro**
-```bash
-sudo pacman -S neofetch
-```
 
 **1. Copy script fragment:**
 ```bash
@@ -62,14 +52,14 @@ or from text file [better_tux.txt](better_tux.txt) located in this repository.
 
 **2. Config neofetch script**
 - Make changes using sed tool with this single command:
-   ```bash
+   ```
    sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
    ```
 
 or
 
 - Manualy open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
-   ```bash
+   ```
    sudo nano /usr/bin/neofetch
    ```
 
@@ -87,19 +77,19 @@ or
 
 **3. Edit neofetch configuration**  
 - Edit config file with single command:
-   ```bash
+   ```
    sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
    ```
    
    **Run neofetch**  
-   ```bash
+   ```
    neofetch
    ```
 
 or
 
 - Manualy open your neofetch config file:
-   ```bash
+   ```
    nano ~/.config/neofetch/config.conf
    ```
    
@@ -114,7 +104,7 @@ or
    Exit: Ctrl + X
 
    **Run neofetch**  
-   ```bash
+   ```
    neofetch
    ```
    
