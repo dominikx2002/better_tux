@@ -12,7 +12,9 @@ Configuration Guide
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
 ## From Terminal
-1. **Download text file [better_tux.txt](better_tux.txt) from github repository using git:**
+1. **Download text file [better_tux.txt](better_tux.txt)**
+
+      Using git from github repository:
       ```
       git clone https://github.com/dominikx2002/better_tux.git
       ```
@@ -20,14 +22,14 @@ After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
       cd better_tux
       ```
 
-2. **Config neofetch script**
+4. **Config neofetch script**
    
       Make changes using sed tool with this single command:
       ```
       sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
       ```
 
-3. **Edit neofetch configuration**
+5. **Edit neofetch configuration**
    
       Edit config file with single command:
       ```
