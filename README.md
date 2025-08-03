@@ -86,28 +86,36 @@ or from text file [better_tux.txt](better_tux.txt) located in this repository.
    ```
 
    Find the function called *get_distro_ascii()*:
+   
       Find: Ctrl + W
       Type: `get_distro_ascii()`
    
    Within this function, between other `case` entries, paste the copied code
    Make sure to place it among the other distro cases.
 
+      Go with cursor to end of the case `;;`
+      Paste: Ctrl + Shift + V
+
    Save your changes and close the text editor:
+   
       Save: Ctrl + O, Enter
       Exit: Ctrl + X
 
-3. **Edit neofetch configuration**  
+4. **Edit neofetch configuration**  
    Open your neofetch config file:
    ```
    nano ~/.config/neofetch/config.conf
    ```
    
    Find the line `ascii_distro="auto"`:
+   
       Find: Ctrl + W
       Type: ascii_distro="auto"
+   
    and replace it with `ascii_distro="better_tux"`
 
    Save the config file and exit the editor:
+   
       Save: Ctrl + O, Enter
       Exit: Ctrl + X
    
