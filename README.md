@@ -21,12 +21,14 @@ After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
    ```
 
 2. **Config neofetch script**
+   
 Make changes using sed tool with this single command:
    ```
    sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
    ```
 
-3. **Edit neofetch configuration**  
+3. **Edit neofetch configuration**
+   
 Edit config file with single command:
    ```
    sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
@@ -39,7 +41,7 @@ neofetch
 
 ## Manual configuration
 
-**1. Copy script fragment:**
+1. **Copy script fragment:**
 ```bash
         "better_tux")
             set_colors 220 8 250 11 7 235 
