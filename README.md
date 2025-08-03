@@ -13,26 +13,26 @@ After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
 ## From Terminal
 1. **Download text file [better_tux.txt](better_tux.txt) from github repository using git:**
-   ```
-   git clone https://github.com/dominikx2002/better_tux.git
-   ```
-   ```
-   cd better_tux
-   ```
+      ```
+      git clone https://github.com/dominikx2002/better_tux.git
+      ```
+      ```
+      cd better_tux
+      ```
 
 2. **Config neofetch script**
    
-Make changes using sed tool with this single command:
-   ```
-   sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
-   ```
+      Make changes using sed tool with this single command:
+      ```
+      sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
+      ```
 
 3. **Edit neofetch configuration**
    
-Edit config file with single command:
-   ```
-   sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
-   ```
+      Edit config file with single command:
+      ```
+      sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
+      ```
 **Run neofetch**  
 ```
 neofetch
