@@ -115,7 +115,7 @@ neofetch
    Find the line `ascii_distro="auto"`:
    
       - Find: Ctrl + W
-      - Type: ascii_distro="auto"
+      - Type: `ascii_distro="auto"`
    
    and replace it with `ascii_distro="better_tux"`
 
