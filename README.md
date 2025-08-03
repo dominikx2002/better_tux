@@ -12,7 +12,7 @@ Configuration Guide
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
 ## From Terminal
-1. **Download txt file [better_tux.txt](better_tux.txt) from github repository using git:**
+1. **Download text file [better_tux.txt](better_tux.txt) from github repository using git:**
    ```
    git clone https://github.com/dominikx2002/better_tux.git
    ```
