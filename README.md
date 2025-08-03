@@ -11,6 +11,30 @@ Configuration Guide
 
 After installing [neofetch](https://github.com/dylanaraps/neofetch.git)
 
+## From Terminal
+**1. Download txt file [better_tux.txt](better_tux.txt) from github repository using git:**
+   ```
+   git clone https://github.com/dominikx2002/better_tux.git
+   ```
+
+**2. Config neofetch script**
+Make changes using sed tool with this single command:
+   ```
+   sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
+   ```
+
+**3. Edit neofetch configuration**  
+Edit config file with single command:
+   ```
+   sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
+   ```
+**Run neofetch**  
+```
+neofetch
+```
+
+## Manual configuration
+
 **1. Copy script fragment:**
 ```bash
         "better_tux")
@@ -51,62 +75,35 @@ EOF
 or from text file [better_tux.txt](better_tux.txt) located in this repository.
 
 **2. Config neofetch script**
-- Make changes using sed tool with this single command:
-   ```
-   sudo sed -i '/^ *"Hash"\*)/e cat better_tux.txt' /usr/bin/neofetch
-   ```
-
-or
-
-- Manualy open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
+Open the neofetch script located at /usr/bin/neofetch using a text editor with root privileges, for example:
    ```
    sudo nano /usr/bin/neofetch
    ```
-
-  Find the function called *get_distro_ascii()*:
+Find the function called *get_distro_ascii()*:
    Find: Ctrl + W
    Type: `get_distro_ascii()`
-  
-  Within this function, between other `case` entries, paste the copied code
-  Make sure to place it among the other distro cases.
-  
-  Save your changes and close the text editor:
+Within this function, between other `case` entries, paste the copied code
+Make sure to place it among the other distro cases.
+Save your changes and close the text editor:
    Save: Ctrl + O, Enter
    Exit: Ctrl + X
 
-
 **3. Edit neofetch configuration**  
-- Edit config file with single command:
-   ```
-   sed -i 's/^ascii_distro="auto"/ascii_distro="better_tux"/' ~/.config/neofetch/config.conf
-   ```
-   
-   **Run neofetch**  
-   ```
-   neofetch
-   ```
-
-or
-
-- Manualy open your neofetch config file:
+Open your neofetch config file:
    ```
    nano ~/.config/neofetch/config.conf
    ```
-   
-   Find the line `ascii_distro="auto"`:
+Find the line `ascii_distro="auto"`:
    Find: Ctrl + W
    Type: ascii_distro="auto"
-   
-   and replace it with `ascii_distro="better_tux"`
-  
-   Save the config file and exit the editor:
+and replace it with `ascii_distro="better_tux"`
+Save the config file and exit the editor:
    Save: Ctrl + O, Enter
    Exit: Ctrl + X
-
-   **Run neofetch**  
-   ```
-   neofetch
-   ```
+**Run neofetch**  
+```
+neofetch
+```
    
 ---
 
